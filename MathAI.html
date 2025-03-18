@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathametician AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toolbar">
+        <!-- College Logo -->
+        <img src="image/Srm New.png" alt="College Logo" class="college-logo">
+
+        <button id="resetBtn" class="btn red">Reset</button>
+
+        <button id="undoBtn" class="btn gray">Undo</button>
+        <button id="redoBtn" class="btn gray">Redo</button>
+
+        <div class="color-options" id="colorOptions">
+            <div class="color-box" data-color="#ffffff" style="background-color: #ffffff;"></div>
+            <div class="color-box" data-color="#ff0000" style="background-color: #ff0000;"></div>
+            <div class="color-box" data-color="#00ff00" style="background-color: #00ff00;"></div>
+            <div class="color-box" data-color="#0000ff" style="background-color: #0000ff;"></div>
+            <div class="color-box" data-color="#ffff00" style="background-color: #ffff00;"></div>
+            <div class="color-box" data-color="#ff00ff" style="background-color: #ff00ff;"></div>
+        </div>
+
+        <input type="range" id="brushSize" min="1" max="15" value="3">
+        <button id="eraserBtn" class="btn gray">Eraser</button>
+        <button id="calculateBtn" class="btn green">Calculate</button>
+    </div>
+
+    <canvas id="drawingCanvas"></canvas>
+
+    <div id="customCursor" class="cursor"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
